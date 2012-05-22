@@ -510,3 +510,7 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+$conf['cache_backends'][] = 'sites/all/modules/memcache/memcache.inc';
+$conf['cache_default_class'] = 'MemCacheDrupal';
+$conf['memcache_key_prefix'] = 'something_unique';
