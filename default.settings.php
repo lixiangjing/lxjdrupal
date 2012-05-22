@@ -514,3 +514,21 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
 $conf['cache_backends'][] = 'sites/all/modules/memcache/memcache.inc';
 $conf['cache_default_class'] = 'MemCacheDrupal';
 $conf['memcache_key_prefix'] = 'something_unique';
+
+
+# -- Configure Cache
+$conf['cache_backends'][] = 'sites/all/modules/mongodb/mongodb_cache/mongodb_cache.inc';
+$conf['cache_class_cache'] = 'DrupalMongoDBCache';
+$conf['cache_class_cache_bootstrap'] = 'DrupalMongoDBCache';
+$conf['cache_default_class'] = 'DrupalMongoDBCache';
+# -- Don't touch SQL if in Cache
+$conf['page_cache_without_database'] = TRUE;
+$conf['page_cache_invoke_hooks'] = FALSE;
+# Session Caching
+$conf['session_inc'] = 'sites/all/modules/mongodb/mongodb_session/mongodb_session.inc';
+$conf['cache_session'] = 'DrupalMongoDBCache';
+# Field Storage
+$conf['field_storage_default'] = 'mongodb_field_storage';
+# Message Queue 
+$conf['queue_default_class'] = 'MongoDBQueue';
+?>
