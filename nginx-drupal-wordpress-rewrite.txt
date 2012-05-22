@@ -1,0 +1,34 @@
+老李学习了try_files命令，就在本地测试。我的测试环境是主目录也就是根目录就是Drupal程序，而子目录也就是二级目录是Wordpress程序，老李是如何实现在Nginx下这两个CMS系统的伪静态呢？老李用两种规则写法实现：
+第一种写法：
+
+location / {
+if (!-e $request_filename) {
+rewrite ^/(.*)$ /index.php?q=$1 last;}
+}
+
+location /wordpress {
+if (!-e $request_filename){
+rewrite ^/wordpress/(.+)$ /wordpress/index.php?q=$1 last;}
+}
+
+第二种写法：
+
+location / {
+# This is cool because no php is touched for static content
+try_files $uri @drupal;
+}
+
+location @drupal {
+# Some modules enforce no slash (/) at the end of the URL
+# Else this rewrite block wouldn't be needed (GlobalRedirect)
+rewrite ^/(.*)$ /index.php?q=$1 last;
+}
+
+location /wordpress/ {
+# This is cool because no php is touched for static content
+try_files $uri $uri/ @wordpress;
+}
+
+location @wordpress {
+rewrite ^/wordpress/(.*)$ /wordpress/index.php?q=$1 last;
+}
