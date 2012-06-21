@@ -1,0 +1,29 @@
+/* Custom layout - black.css */
+
+#header,
+.navigation .wp-pagenavi .current,
+.navigation .wp-pagenavi a:hover,
+#footer  {
+	background:#111;
+}
+
+#content h1.entry-title a,
+#content h2.entry-title a {
+    color: #111;
+    text-decoration: none;
+}
+
+a:hover,
+#sidebar a:hover  {
+	text-decoration: underline;
+}
+
+#content h1.entry-title a:hover,
+#content h2.entry-title a:hover {
+    color: #555;
+	text-decoration: none;
+}
+
+#sidebar .sidebar-inner ul ul li {
+    background: url(../images/arrow-black.png) no-repeat 0 13px;
+}

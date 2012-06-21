@@ -1,0 +1,15 @@
+/* =ie7.css - CSS for IE 7, 8, 9 hacks
+-------------------------------------------------------------- */
+
+.nav li,
+.nav li a,
+#cat li,
+#cat li a {
+	display: block;
+}
+#search input {
+	padding:6px 6px 4px;
+}
+#commentform label {
+	position: relative;
+}

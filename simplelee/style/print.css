@@ -1,0 +1,55 @@
+/*
+ * Basically Print Style 1.0.0
+ */
+
+/* Reset Style */
+body {margin:0; padding:0; line-height: 2em; word-spacing:1px; letter-spacing:0.2px; font: 11pt Arial, Helvetica,"Lucida Grande", serif; color: #000;}
+
+/* Remove Element */
+#header, #nav_link, #category_header, #crumbs, .post-pages, .post-nav, a.more-link, .navigation, .postmetadata,  #sidebar, .comment-reply-link,  #footer, .ads-2, .ads-3, .social4i, .snap_nopreview, .comments-box, #footer{display:none;}
+
+/* Show URL */
+a:link, a:visited {background: transparent; color:#333; text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="http://"] {color:#000;}
+
+/* Break Page */
+.comments-box{
+	page-break-before: always;
+}
+
+/* Other style */
+p{
+	line-height:1.5em;
+}
+img.aligncenter,
+img.alignleft,
+img.alignright,
+img.alignnone {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.alignleft,
+.commentlist .avatar {
+	float:left;
+	margin:0 10px 0;
+}
+img.alignright{
+	float:right;
+	margin:0 0 0 10px;
+}
+img.alignnone{
+	margin:0;
+}
+.txt {
+	border:1px solid #000;
+}
+.comments-box ul li,
+.comments-box ul li ul li
+.comments-box ol li,
+.comments-box ol li ol li,
+.commentlist li{
+	list-style:none;
+}

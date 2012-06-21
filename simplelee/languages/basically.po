@@ -1,0 +1,473 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Basically 2.0.7.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-26 13:24+0700\n"
+"PO-Revision-Date: 2012-02-26 13:24+0700\n"
+"Last-Translator: Satrya <satryabima24@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: gettext;gettext_noop;__;_e;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: 404.php:12
+msgid "Error 404 - Not Found"
+msgstr ""
+
+#: 404.php:16
+msgid "It seems we cant find what you are looking for. Perhaps searching or one of the links below, can help."
+msgstr ""
+
+#: 404.php:20
+msgid "Most Used Categories"
+msgstr ""
+
+#: archive.php:12
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:14
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:16
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:18
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: archive.php:20
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:22
+msgid "Blog Archives"
+msgstr ""
+
+#: attachment.php:15
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: attachment.php:28
+msgid "Download Image &raquo;"
+msgstr ""
+
+#: attachment.php:47
+#: loop.php:33
+msgid "Not Found"
+msgstr ""
+
+#: attachment.php:48
+#: loop.php:34
+msgid "Sorry, but you are looking for something that isnt here."
+msgstr ""
+
+#: author.php:13
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: comments.php:9
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:21
+#, php-format
+msgid "One Response to %2$s"
+msgstr ""
+
+#: comments.php:26
+#: comments.php:35
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: comments.php:27
+#: comments.php:36
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:60
+msgid "Name"
+msgstr ""
+
+#: comments.php:63
+msgid "Email"
+msgstr ""
+
+#: comments.php:66
+msgid "Website"
+msgstr ""
+
+#: comments.php:70
+msgid "Your Comment <span class=\"required\">*</span>"
+msgstr ""
+
+#: footer.php:20
+msgid "Theme by"
+msgstr ""
+
+#: full-width-page.php:16
+#: page.php:17
+msgid "Edit"
+msgstr ""
+
+#: functions.php:44
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:45
+msgid "Secondary Navigation"
+msgstr ""
+
+#: functions.php:120
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:121
+msgid "This sidebar appears on the right side of your site"
+msgstr ""
+
+#: functions.php:128
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:129
+#: functions.php:137
+#: functions.php:145
+#: functions.php:153
+msgid "This sidebar appears on the footer of your site"
+msgstr ""
+
+#: functions.php:136
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:144
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:152
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:167
+#, php-format
+msgid "<span class=\"author vcard\">Posted by <a class=\"url fn n\" href=\"%1$s\" title=\"%2$s\">%3$s</a></span> - <span class=\"published entry-date\" datetime=\"%4$s\" pubdate>%5$s</span> - <span class=\"%6$s category\">Posted in: %7$s</span> - <a href=\"%8$s\" title=\"%9$s\" rel=\"bookmark\">Permalink</a>"
+msgstr ""
+
+#: functions.php:169
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: functions.php:176
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: header.php:68
+#: header.php:70
+msgid "Home"
+msgstr ""
+
+#: loop.php:22
+msgid "Read more &raquo;"
+msgstr ""
+
+#: loop.php:28
+msgid "Pages:"
+msgstr ""
+
+#: loop.php:39
+msgid "&larr; Older posts"
+msgstr ""
+
+#: loop.php:40
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: search.php:10
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:35
+#, php-format
+msgid "Tags: <span class=\"%1$s\">%2$s</span>"
+msgstr ""
+
+#: single.php:42
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: single.php:43
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions/basically-extensions.php:56
+#: functions/basically-extensions.php:58
+msgid "Category Archive: "
+msgstr ""
+
+#: functions/basically-extensions.php:82
+#, php-format
+msgid "Posts Published in: %s"
+msgstr ""
+
+#: functions/basically-extensions.php:134
+msgid "Search Results:"
+msgstr ""
+
+#: functions/basically-extensions.php:139
+msgid "Tag Archive:"
+msgstr ""
+
+#: functions/basically-extensions.php:144
+msgid "Posts Written by:"
+msgstr ""
+
+#: functions/basically-extensions.php:149
+msgid "Error 404:"
+msgstr ""
+
+#: functions/basically-extensions.php:150
+msgid "Page Not Found"
+msgstr ""
+
+#: functions/basically-extensions.php:154
+msgid "Post Format Archive:"
+msgstr ""
+
+#: options/basically-theme-options.php:43
+#: options/basically-theme-options.php:44
+msgid "Basically Theme Options"
+msgstr ""
+
+#: options/basically-theme-options.php:56
+msgid "Default"
+msgstr ""
+
+#: options/basically-theme-options.php:60
+msgid "Black"
+msgstr ""
+
+#: options/basically-theme-options.php:64
+msgid "Brown"
+msgstr ""
+
+#: options/basically-theme-options.php:68
+msgid "Green"
+msgstr ""
+
+#: options/basically-theme-options.php:72
+msgid "Grey"
+msgstr ""
+
+#: options/basically-theme-options.php:76
+msgid "Orange"
+msgstr ""
+
+#: options/basically-theme-options.php:80
+msgid "Pink"
+msgstr ""
+
+#: options/basically-theme-options.php:84
+msgid "Purple"
+msgstr ""
+
+#: options/basically-theme-options.php:88
+msgid "Red"
+msgstr ""
+
+#: options/basically-theme-options.php:99
+msgid "Yes"
+msgstr ""
+
+#: options/basically-theme-options.php:103
+msgid "No"
+msgstr ""
+
+#: options/basically-theme-options.php:114
+msgid "Content on left"
+msgstr ""
+
+#: options/basically-theme-options.php:119
+msgid "Content on right"
+msgstr ""
+
+#: options/basically-theme-options.php:124
+msgid "One-column - no sidebar"
+msgstr ""
+
+#: options/basically-theme-options.php:187
+#, php-format
+msgid "%s Theme Options"
+msgstr ""
+
+#: options/basically-theme-options.php:200
+msgid "General Options"
+msgstr ""
+
+#: options/basically-theme-options.php:201
+msgid "Layout Options"
+msgstr ""
+
+#: options/basically-theme-options.php:202
+msgid "Ads Options"
+msgstr ""
+
+#: options/basically-theme-options.php:203
+msgid "Changelog"
+msgstr ""
+
+#: options/basically-theme-options.php:210
+msgid "Upload Custom Header:"
+msgstr ""
+
+#: options/basically-theme-options.php:211
+#, php-format
+msgid "If you want to upload your custom header. Please <a href=\"%1$s\">Go to this page</a>"
+msgstr ""
+
+#: options/basically-theme-options.php:216
+msgid "Custom Background:"
+msgstr ""
+
+#: options/basically-theme-options.php:217
+#, php-format
+msgid "If you want to change the background color or want to upload your background image. Please <a href=\"%1$s\">Go to this page</a>"
+msgstr ""
+
+#: options/basically-theme-options.php:222
+msgid "Custom Menus :"
+msgstr ""
+
+#: options/basically-theme-options.php:223
+#, php-format
+msgid "Easily add, edit and delete your menus using custom menus. Please <a href=\"%1$s\">Go to this page</a> to setup your menus"
+msgstr ""
+
+#: options/basically-theme-options.php:228
+msgid "Upload Logo:"
+msgstr ""
+
+#: options/basically-theme-options.php:236
+msgid "Enter the URL or upload an image for the <strong>Logo</strong>"
+msgstr ""
+
+#: options/basically-theme-options.php:247
+msgid "Upload Favicon :"
+msgstr ""
+
+#: options/basically-theme-options.php:255
+msgid "Enter the URL or upload an image for the <strong>Favicon</strong>"
+msgstr ""
+
+#: options/basically-theme-options.php:265
+msgid "Hide Site Title :"
+msgstr ""
+
+#: options/basically-theme-options.php:275
+msgid "If you want to hide the site title & description, choose Yes."
+msgstr ""
+
+#: options/basically-theme-options.php:280
+msgid "Show secondary navigation ? :"
+msgstr ""
+
+#: options/basically-theme-options.php:290
+msgid "If you want to show secondary navigation, choose Yes."
+msgstr ""
+
+#: options/basically-theme-options.php:295
+msgid "Header Script :"
+msgstr ""
+
+#: options/basically-theme-options.php:299
+msgid "If you need to add scripts to your header (like meta tag verification, perhaps), you should enter them in the box above. They will be added before &lt;/head&gt; tag"
+msgstr ""
+
+#: options/basically-theme-options.php:304
+msgid "Tracking Code :"
+msgstr ""
+
+#: options/basically-theme-options.php:308
+msgid "Put your tracking script here. Such as google analytic script, they will be added before &lt;/body&gt; tag"
+msgstr ""
+
+#: options/basically-theme-options.php:317
+msgid "Color Scheme:"
+msgstr ""
+
+#: options/basically-theme-options.php:331
+msgid "Font Stack:"
+msgstr ""
+
+#: options/basically-theme-options.php:341
+msgid "Default: Georgia"
+msgstr ""
+
+#: options/basically-theme-options.php:346
+msgid "Theme Layout :"
+msgstr ""
+
+#: options/basically-theme-options.php:372
+msgid "468x60 Header Ad :"
+msgstr ""
+
+#: options/basically-theme-options.php:376
+msgid "Put your ads code here. The ads will be added in header."
+msgstr ""
+
+#: options/basically-theme-options.php:381
+msgid "Single Post Ads <em>(below post title)</em> :"
+msgstr ""
+
+#: options/basically-theme-options.php:385
+msgid "Put your ads code here. The ads will be added below post title in single post."
+msgstr ""
+
+#: options/basically-theme-options.php:390
+msgid "Single Post Ads <em>(below post content)</em> :"
+msgstr ""
+
+#: options/basically-theme-options.php:394
+msgid "Put your ads code here. The ads will be added below post content in single post."
+msgstr ""
+
+#: options/basically-theme-options.php:427
+msgid "Give Basically 5 Star Rating"
+msgstr ""
+
+#: options/basically-theme-options.php:429
+msgid "If you love this theme, please give 5 star rating at wordpress directory. <a href=\"http://wordpress.org/extend/themes/basically\" target=\"_blank\">Give 5 star rating</a>"
+msgstr ""
+
+#: options/basically-theme-options.php:434
+msgid "Support"
+msgstr ""
+
+#: options/basically-theme-options.php:436
+msgid "Need a support ? Send me an email to <a href=\"mailto:asksatrya@gmail.com\">asksatrya@gmail.com</a>"
+msgstr ""
+
+#: options/basically-theme-options.php:441
+msgid "Links"
+msgstr ""
+

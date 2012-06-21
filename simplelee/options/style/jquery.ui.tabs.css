@@ -1,0 +1,19 @@
+/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; overflow: hidden; border-bottom-color: #DFDFDF; text-shadow: white 0 1px 0; -moz-box-shadow: 0 1px 0 #fff; -webkit-box-shadow: 0 1px 0 #fff; box-shadow: 0 1px 0 #fff; background-color: #F1F1F1; background-image: -ms-linear-gradient(top,#f9f9f9,#ececec); background-image: -moz-linear-gradient(top,#f9f9f9,#ececec); background-image: -o-linear-gradient(top,#f9f9f9,#ececec); background-image: -webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#ececec)); background-image: -webkit-linear-gradient(top,#f9f9f9,#ececec); background-image: linear-gradient(top,#f9f9f9,#ececec);}
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; margin: 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: 1em; text-decoration: none; font-weight: bold;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; background-color: #f9f9f9; background-image: -ms-linear-gradient(top,#ececec,#f9f9f9); background-image: -moz-linear-gradient(top,#ececec,#f9f9f9); background-image: -o-linear-gradient(top,#ececec,#f9f9f9); background-image: -webkit-gradient(linear,left top,left bottom,from(#ececec),to(#f9f9f9)); background-image: -webkit-linear-gradient(top,#ececec,#f9f9f9); background-image: linear-gradient(top,#ececec,#f9f9f9);}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a { background: #fff; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 0 !important; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }

@@ -1,0 +1,66 @@
+/*
+ * Basically Theme Options 1.0.0
+ */
+
+#options{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 0;
+    width: 70%;
+}
+#options select {
+	width:10em;
+}
+.form-table{
+	width:auto;
+	margin-top:0;
+}
+.form-table tr {
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	padding: 0 10px;
+	width: 97.5%;
+}
+.form-table th {
+	font-weight: bold;
+}
+th.title {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    font-weight: bold;
+    padding: 10px 0 10px 5px;
+}
+#options .form-table select {
+	width: 25em;
+}
+.post-titles{
+    float: left;
+    padding: 4px 0 0;
+}
+.save_button {
+    float: right;
+    margin-right: 10px;
+}
+#admin_side {
+	float:left;
+	width:28%;
+}
+select#category,
+select#style {
+	width:200px;
+}
+p.submit {
+	margin-left:10px;
+}
+.layouts {
+	width: 140px;
+	display: inline;
+	float: left;
+	margin-right: 25px;
+}
+input.choose-layout {
+	display: block;
+	margin: 0 auto;
+}

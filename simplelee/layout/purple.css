@@ -1,0 +1,34 @@
+/* Custom layout - purple.css */
+
+#header,
+.navigation .wp-pagenavi .current,
+.navigation .wp-pagenavi a:hover,
+#footer  {
+	background:#bf00bf;
+}
+
+a:link,
+a:active,
+a:visited,
+#content h1.entry-title a,
+#content h2.entry-title a,
+#sidebar a:link,
+#sidebar a:visited  {
+    color: #bf00bf;
+    text-decoration: none;
+}
+
+a:hover,
+#sidebar a:hover  {
+	text-decoration: underline;
+}
+
+#content h1.entry-title a:hover,
+#content h2.entry-title a:hover {
+    color: #000;
+	text-decoration: none;
+}
+
+#sidebar .sidebar-inner ul ul li {
+    background: url(../images/arrow-purple.png) no-repeat 0 13px;
+}
