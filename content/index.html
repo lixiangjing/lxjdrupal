@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<link href="http://idc.wowcms.com/webmaster/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<style type="text/css">
+<!--
+body{font:14px Verdana,Arial,Helvetica,sans-serif; background:#eee; margin:0; padding:0; color:#000}
+ul, ol, dl{padding:0; margin:0}
+h1, h2, h3, h4, h5, h6, p{margin-top:0; padding-right:15px; padding-left:15px}
+a img{border:none}
+a:link{color:#1982d1; text-decoration:underline}
+a:visited{color:#1982d1; text-decoration:underline}
+a:hover, a:active, a:focus{text-decoration:none}
+.container{width:960px; background:#FFF; margin:10px auto}
+.header{background:#e2e2e2;text-align:center;}
+.header span{font-size:28px;font-style:bold;padding-right:15px; padding-left:15px;font-weight:600;}
+.header a, .header a:visited{text-decoration:none;}
+.content{padding:10px 10px; width:560px; float:left}
+.content h2{background-color:#eee;border-left:5px #ff0000 solid;font-weight:bold;}
+.content ul{list-style:none;padding:0 15px 15px 18px}
+.content li{margin-bottom:5px;line-height:18px;}
+.sidebar{float:left; width:380px;padding-bottom:10px}
+.sidebar h2{margin:10px 10px;background-color:#eee;border-left:5px #ff0000 solid;font-weight:bold;}
+.sidebar li{padding-right:15px; padding-left:15px}
+.sidebar ul{list-style:none;margin-bottom:15px}
+.sidebar ul a, .sidebar ul a:visited{text-decoration:none;line-height:24px;}
+.footer{padding:10px 0; background:#e2e2e2; position:relative; clear:both;text-align:center;}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1><a href="http://idc.wowcms.com/webmaster/" title="CMS资讯网IDC社区站长文库">CMS资讯网站长文库</a></h1>
+    <!-- 页面头部区域 -->
+  </div>
+  <div class="content">
+    <h2>SEO文库</h2>
+	   {pc:content action="lists" catid="12" num="10" order="id DESC" return="info"}
+			<ul>
+			{loop $info $v}
+				<li><a href="{$v['url']}" target="_blank" title="{$v['title']}">{str_cut($v['title'],90)}</a></li>
+			{/loop}
+			</ul>
+		{/pc}
+    <!--页面主题内容-->
+  </div>
+  <div class="sidebar">
+    <h2>站长文库推荐</h2>
+    <ul>
+				<li><a href="http://idc.wowcms.com/webmaster/html/exp/" title="站长经验">站长经验</a>——<span>汇集草根站长的点滴经验</span></li>
+				<li><a href="http://idc.wowcms.com/webmaster/html/seo/" title="SEO优化">SEO优化</a>——<span>草根站长的网站运维技术文档</span></li>
+				<li><a href="http://idc.wowcms.com/webmaster/html/youhua/" title="SEO文库">SEO文库</a>——<span>草根站长网站优化文集</span></li>
+    </ul>
+    <h2>IDC数据中心</h2>
+	   {pc:content action="lists" catid="13" num="5" order="id DESC" return="info"}
+			<ul>
+			{loop $info $v}
+				<li><a href="{$v['url']}" target="_blank" title="{$v['title']}">{str_cut($v['title'],90)}</a></li>
+			{/loop}
+			</ul>
+		{/pc}
+    <!-- 页面侧边栏 -->
+  </div>
+  <div class="footer">
+    <p>内容驱动平台： <a href="http://idc.wowcms.com/webmaster/"  target="_blank">CMS资讯网站长文库</a> © 2010-2012 <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP备11019381号</a></p>
+      <!-- 页面底部内容  -->
+  </div>
+  <!-- 页面内容框架 -->
+</div>
+</body>
+</html>
