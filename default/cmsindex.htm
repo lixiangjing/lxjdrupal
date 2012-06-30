@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="http://www.wowcms.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<style type="text/css">
+<!--
+body{font:14px Microsoft YaHei,Verdana,Arial,Helvetica,sans-serif;margin:0;padding:0;background-color:#f0f0f0;}
+ul, ol, dl{padding:0; margin:0}
+h1, h2, h3, h4, h5, h6, p{margin:10px auto;pading:10px auto;}
+a img{border:none}
+a:link{color:#1982d1;text-decoration:none}
+a:visited{color:#1982d1;text-decoration:none}
+a:hover, a:active, a:focus{text-decoration:none}
+.container{mini-width:960px; background:#fff;margin:10px auto;padding:10px;}
+.header{background:#256cb1;text-align:center;height:90px;}
+.header h1{padding-top:30px;}
+.header a, .header a:visited{text-decoration:none;color:#fff;}
+.content{width:72%;float:left;border-right:1px dashed #f0f0f0;}
+.content h2{font-size:22px;line-height:130%;border-bottom:1px solid #f0f0f0;margin-top:10px;}
+.content p{margin-bottom:20px;line-height:130%;}
+.sidebar{float:right; width:27%;padding-bottom:10px;}
+.sidebar h2{border-left:5px #ff0000 solid;margin-left:10px;padding-left:10px;background-color:#f0f0f0;}
+.sidebar li{padding-right:15px; padding-left:15px;}
+.sidebar ul{list-style:none;margin-bottom:15px}
+.sidebar ul a, .sidebar ul a:visited{text-decoration:none;line-height:24px;}
+.footer{padding:10px 0;background:#c20e33;position:relative;clear:both;text-align:center;color:#fff;}
+.footer a, .footer a:visited{text-decoration:none;line-height:24px;color:#fff;}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1><a href="http://www.wowcms.com/" title="CMS资讯网">{CMS资讯网：站长老李的技术收藏夹}</a></h1>
+    <!-- 页面头部区域 -->
+  </div>
+  <div class="content">
+		{dede:arclist titlelen=60 row=10 orderby=pubdate}
+		<h2><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a></h2><p>[field:description function='html2text(@me)'/]</p>{/dede:arclist}
+    <!--页面主题内容-->
+  </div>
+  <div class="sidebar">
+    <h2>热门文章</h2>
+    <ul>
+		{dede:arclist titlelen=60 row=10 orderby=click}
+		<li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a></li>{/dede:arclist}
+    </ul>
+    <!-- 页面侧边栏 -->
+  </div>
+  <div class="footer">
+    <p>内容驱动平台：<a href="http://www.wowcms.com/"  target="_blank">CMS资讯网</a> © 2010-2012 <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP备11019381号</a></p>
+      <!-- 页面底部内容  -->
+  </div>
+  <!-- 页面内容框架 -->
+</div>
+</body>
+</html>

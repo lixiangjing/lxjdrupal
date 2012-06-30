@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}-最全面的健康养生寻医问药平台</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templeturl/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articlelist">
+{dede:include filename="head.htm"/}
+<!-- /header -->
+<div class="w960 center clear mt1">
+	<div class="pleft">
+		<div class="listbox">
+			<dl class="tbox">
+				<dt class='light'><strong>中国健康资讯网最新文章</strong></dt>
+				<dd class='light'>
+					<ul class="c1 ico2">
+          {dede:arclist typeid='2,3,4,5,6,7,8'noflag='h' titlelen='60' row='100' orderby='pubdate'}            
+            <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+                                                         {/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div><!-- /listbox -->
+		
+	</div><!-- /pleft -->
+	
+	<div class="pright">
+ <div class="hot mt1"><dl class="tbox light"><dt class="light"><strong>{dede:field.typename/}最新文章</strong> </dt><dd class="light">
+<ul class="c1 ico2">{dede:arclist typeid='2,3,4,5,6,7,8' noflag='h' titlelen='60' row='10' orderby='pubdate'}
+    <li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a> {/dede:arclist}</li>
+</ul>
+</dd></dl></div>
+<div class="commend mt1"><dl class="tbox light"><dt class="light"><strong>{dede:field.typename/}编辑推荐</strong> </dt><dd class="light">
+<ul class="d4">{dede:arclist typeid='2,3,4,5,6,7,8' flag='c' titlelen=60 row=6}
+    <li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a>
+    <p>[field:description function='cn_substr(@me,80)'/]...</p>
+    {/dede:arclist}</li>
+</ul>
+</dd></dl></div>
+<div class="hot mt1"><dl class="tbox light"><dt class="light"><strong>{dede:field.typename/}热点内容</strong> </dt><dd class="light">
+<ul class="c1 ico2">{dede:arclist typeid='2,3,4,5,6,7,8' titlelen=60 row=10 orderby=click}
+    <li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a> {/dede:arclist}</li>
+</ul>
+</dd></dl></div>	</div><!-- /pright -->
+</div>
+<div class="flink w960 center mt1 clear">
+	<dl class="tbox">
+		<dt><strong>友情链接</strong></dt>
+		<dd>
+			<ul class="f5">
+				<li><a href='http://www.xinhuanet.com/health/' target='_blank'>新华网健康频道</a> </li><li><a href='http://health.sohu.com/' target='_blank'>搜狐健康</a> </li><li><a href='http://www.39.net/' target='_blank'>39健康网</a> </li><li><a href='http://health.people.com.cn/' target='_blank'>人民网健康频道</a> </li><li><a href='http://health.enorth.com.cn/' target='_blank'>北方网健康之家</a> </li><li><a href='http://health.china.com/' target='_blank'>中华网健康频道</a> </li><li><a href='http://health.qianlong.com/' target='_blank'>千龙健康</a> </li><li><a href='http://www.haodf.com/' target='_blank'>好大夫在线</a> </li><li><a href='http://www.xywy.com/' target='_blank'>寻医问药</a> </li><li><a href='http://www.sinojiankang.com/' target='_blank'>中国健康资讯网</a> </li>
+
+		  </ul>
+		</dd>
+	</dl>
+</div><!-- /flink -->
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5c7e0f458302563d7be1a882896f7ad6' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

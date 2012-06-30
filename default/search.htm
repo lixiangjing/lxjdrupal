@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}_搜索结果</title>
+<link href="{dede:global.cfg_templeturl/}/style/search.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+
+<div class="msgbar">
+	<p>搜索 <strong class="fc_03c">{dede:global name='keyword'/}</strong> 的结果</p>
+</div>
+
+<div class="resultlist">
+	
+{dede:list perpage='50' titlelen='60'}
+
+	<div class="item">
+		<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+		<p class="intro">[field:description/]...</p>
+		<p class="info">
+			<small>分类：</small><span> <a href="[field:typeurl/]" target="_blank">[field:typename/]</a></span>
+			<small>点击：</small><span> [field:click/]</span>
+			<small>日期：</small><span> [field:stime/]</span>
+		</p>
+        <p><span><a href="[field:arcurl/]" target="_blank">[field:arcurl/]</a></span></p>
+	</div>
+{/dede:list}
+
+
+
+</div>
+
+<div class="dede_pages">
+	<ul class="pagelist">
+		{dede:pagelist listsize='10'/}  
+	</ul>
+</div><!-- /pages -->
+
+<div class="othersearch">
+<FORM name=formsearch action=/v1/plus/search.php target=new><INPUT type=hidden 
+value=0 name=kwtype> <INPUT type=radio CHECKED value=titlekeyword name=select> 
+智能 <INPUT type=radio value=title name=select> 标题 <INPUT class=text name=keyword> 
+<INPUT class=submit type=submit align=absMiddle value="搜 索"> </FORM></div></div>
+</div>
+
+<div class="footer">
+	<p class="link">
+		网站底部导航链接
+	</p>
+
+	<p class="powered">
+		老李终于实现DEDECMS全文搜索！
+	</p><!-- /powered -->
+	
+</div>
+
+</body>
+</html>

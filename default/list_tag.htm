@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.typename/} | 关注CMS系统和网站服务器</title>
+<link href="http://blog.wowcms.com/favicon.ico" rel="shortcut icon" />
+<link href="{dede:global.cfg_templeturl/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articlelist">
+{dede:include filename="cmsheader.htm"/} 
+<!-- /header -->
+<div class="w960 center clear mt1">
+  <div class="pleft">
+    <div class="place"> <strong>当前位置:</strong> <a href="http://www.wowcms.com/">CMS资讯网</a> > {dede:type}<a href="[field:typelink /]">[field:typename /]</a>{/dede:type} > </div>
+    <!-- /place -->
+    <div class="listbox">
+      <ul class="d2 ico1">
+        <!--最新文档--> 
+        {dede:list pagesize='50'}
+        <li><span>[field:pubdate function="MyDate('Y-m-d H:i',@me)"/]</span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></li>
+	[field:global.autoindex runphp='yes'] 
+	if((@me % 5) == 0){ 
+	@me ='<span class="breakup"></span>'; 
+	} 
+	else{ 
+	@me = ''; 
+	} 
+	[/field:global.autoindex]
+        {/dede:list} 
+        <!--//最新文档-->
+      </ul>
+    </div>
+    <!-- /listbox -->
+    <div class="list_dede_pages">
+      <ul class="pagelist">
+        {dede:pagelist listitem="pageno" listsize="10"/}
+      </ul>
+    </div>
+    <!-- /pages --> 
+  </div>
+  <!-- /pleft -->
+  <div class="pright">
+    <div class="hot mt1">
+      <dl class="tbox light">
+        <dt class="light"><strong>{dede:field.typename/}最新文章</strong> </dt>
+        <dd class="light">
+          <ul class="c1 ico2">
+            {dede:arclist noflag='h' titlelen='60' row='10' orderby='pubdate'}
+            <li><a title="[field:title/]" href="[field:arcurl/]" target="_blank">[field:title/]</a> {/dede:arclist}</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="commend mt1">
+      <dl class="tbox light">
+        <dt class="light"><strong>{dede:field.typename/}编辑推荐</strong> </dt>
+        <dd class="light">
+          <ul class="d4">
+            {dede:arclist flag='c' titlelen=60 row=5}
+            <li><a title="[field:title/]" href="[field:arcurl/]" target="_blank">[field:title/]</a>
+              <p>[field:description function='cn_substr(@me,100)'/]...</p>
+              {/dede:arclist}</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="hot mt1">
+      <dl class="tbox light">
+        <dt class="light"><strong>{dede:field.typename/}热点内容</strong> </dt>
+        <dd class="light">
+          <ul class="c1 ico2">
+            {dede:arclist titlelen=60 row=10 orderby=click}
+            <li><a title="[field:title/]" href="[field:arcurl/]" target="_blank">[field:title/]</a> {/dede:arclist}</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <!-- /pright --> 
+</div>
+{dede:include filename="cmsfooter.htm"/} 
+<!-- /footer --> 
+</body>
+</html>

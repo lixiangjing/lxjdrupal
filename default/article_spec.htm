@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templeturl/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<body >
+{dede:include filename="head.htm"/}
+<!-- /header -->
+<div class="w960 center clear mt1">
+	<div class="pleft">
+		<div class="viewbox">
+			<div class="title">
+				<h2>{dede:field name="title"/}</h2>
+			</div><!-- /title -->
+			<div class="info">
+				<small>时间:</small>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<small>责任编辑:</small>{dede:field.writer/}  
+			</div><!-- /info -->
+			<div class="content">
+			　{dede:field name='description'/}
+			</div><!-- /content -->
+		</div><!-- /viewbox -->
+		<div class="speciallist">
+        {dede:field.note/}
+		</div>	
+		
+	</div><!-- /pleft -->
+
+	<div class="pright">
+          <script src='http://www.sinojiankang.com/plus/ad_js.php?aid=1' language='javascript'></script>
+		<div class="commend">
+			<dl class="tbox">
+				<dt><strong>推荐专题</strong></dt>
+				<dd>
+					<ul class="d4">
+           {dede:arclist channelid='-1' titlelen=60 row=6}
+          	<li><a href="[field:arcurl/]">[field:title/]</a>
+            	<p>[field:description function='cn_substr(@me,80)'/]...</p>
+            </li>{/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div><!-- /commend -->
+		
+		<div class="hot mt1">
+			<dl class="tbox">
+				<dt><strong>热点内容</strong></dt>
+				<dd>
+					<ul class="c1 ico2">
+                    {dede:arclist titlelen=60 row=10 orderby=click}
+                    	<li><a href="[field:arcurl/]">[field:title/]</a></li>
+                    {/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div>
+<script src='http://www.sinojiankang.com/plus/ad_js.php?aid=2' language='javascript'></script>
+	</div><!-- /pright -->
+</div>
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+
+
+</body>
+</html>

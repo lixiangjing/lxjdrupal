@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.seotitle /}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templeturl/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articlelist">
+{dede:include filename="head.htm"/}
+<!-- /header -->
+<div class="w960 center clear mt1">
+	<div class="pleft">
+		<div class="listbox">
+			<dl class="tbox">
+				<dt class='light'><strong>中国健康资讯网最新文章</strong></dt>
+				<dd class='light'>
+					<ul class="c1 ico2">
+          {dede:arclist typeid='1,2,3,4,5,6,7,8'noflag='h' titlelen='60' row='100' orderby='pubdate'}            
+            <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+                                                         {/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div><!-- /listbox -->
+		
+	</div><!-- /pleft -->
+	
+	<div class="pright">
+		<div class="hot mt1 light">
+			<dl class="tbox">
+				<dt class='light'><strong>中国健康资讯网热点专题</strong></dt>
+				<dd class='light'>
+					<ul class="c1 ico2">
+           {dede:arclist channelid='-1' titlelen=60 row=6}
+          	<li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+            </li>{/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="commend">
+			<dl class="tbox light">
+				<dt class='light'><strong>中国健康资讯网推荐内容</strong></dt>
+				<dd class='light'>
+					<ul class="d4">
+           {dede:arclist typeid='1,2,3,4,5,6,7,8' flag='c' titlelen=60 row=10}
+          	<li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+            	<p>[field:description function='cn_substr(@me,80)'/]...</p>
+            </li>{/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div><!-- /commend -->
+		
+		<div class="hot mt1 light">
+			<dl class="tbox">
+				<dt class='light'><strong>中国健康资讯网热点内容</strong></dt>
+				<dd class='light'>
+					<ul class="c1 ico2">
+                    {dede:arclist typeid='1,2,3,4,5,6,7,8' titlelen=60 row=10 orderby=click}
+                    	<li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+                    {/dede:arclist}
+					</ul>
+				</dd>
+			</dl>
+		</div>
+
+	</div><!-- /pright -->
+</div>
+<div class="flink w960 center mt1 clear">
+	<dl class="tbox">
+		<dt>
+			<strong>友情链接</strong>
+			<span class="more">
+				<a href="plus/flink.php">所有链接</a> | <a href="plus/flink_add.php">申请加入</a>
+			</span>
+		</dt>
+		<dd>
+			<ul class="f5">
+				{dede:flink row='24'/}
+		  </ul>
+		</dd>
+	</dl>
+</div><!-- /flink -->
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+此处放置统计代码等JS代码
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templeturl/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articlelist">
+<div class="header">
+	<div class="top w960 center">
+     <a href="http://www.vancl.com/WebSource/WebSource.aspx?source=lixiangjing&url=http://www.vancl.com/" target="_blank"><img src="http://union.vancl.com/adpic.aspx?w=950&h=100" border="0" /></a>
+	</div>
+</div>
+<div class="w960 center clear mt1">
+	<div class="pleft">
+		<div class="place">
+		 <strong>{dede:field.title/}</strong></div><!-- /place -->
+		<div class="listbox">
+	            {dede:field.body/}
+		</div><!-- /listbox -->
+	</div><!-- /pleft -->
+	
+<div class="pright">
+    <div class="commend mt1">
+      <dl class="tbox light">
+        <dt class='light'><strong>{dede:field.typename/}编辑推荐</strong></dt>
+        <dd class='light'>
+          <ul class="d4">
+            {dede:arclist typeid='11,12,13' flag='c' titlelen=60 row=10}
+            <li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+              <p>[field:description function='cn_substr(@me,80)'/]...</p>
+            </li>
+            {/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- /commend -->
+<a href="http://www.vancl.com/WebSource/WebSource.aspx?source=lixiangjing&url=http://www.vancl.com/" target="_blank"><img 
+src="http://union.vancl.com/adpic.aspx?w=300&h=250" border="0" /></a>
+
+	</div><!-- /pright -->
+</div>
+
+<div class="footer w960 center mt1 clear">
+	<p class="powered">
+	<a href="http://www.vancl.com/WebSource/WebSource.aspx?source=lixiangjing&url=http://www.vancl.com/" target="_blank"><img src="http://union.vancl.com/adpic.aspx?w=728&h=90" border="0" /></a></p>
+<!-- /powered -->
+	</div>
+<!-- /footer -->
+</body>
+</html>

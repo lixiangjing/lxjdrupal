@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:field.keywords/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templeturl/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articleview">
+{dede:include filename="head.htm"/}
+<!-- /header -->
+<div class="w960 center clear mt1">
+  <div class="pleft">
+     <div class="place"> <strong>当前位置:</strong> <a href='http://www.sinojiankang.com/'>网站首页</a> > {dede:type}<a href="[field:typelink /]">[field:typename /]</a>{/dede:type} >  </div>
+     <!-- /place -->
+    <div class="viewbox">
+      <div class="title">
+        <h2>{dede:field.title/}</h2>
+      </div>
+      <!-- /title -->
+      <div class="info"> <small>时间:</small>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<small>来源:</small>{dede:field.source/} <small>责任编辑:</small>{dede:field.writer/}</div>
+      <!-- /info -->
+      <div align="center"><script src='http://www.sinojiankang.com/plus/ad_js.php?aid=4' language='javascript'></script></div>
+      <div class="content">
+              <!-- google_ad_section_start -->
+              {dede:field.body/}
+              <!-- google_ad_section_end -->
+      </div>
+      <!-- /content -->
+      <div class="dede_pages">
+        <ul class="pagelist">
+          {dede:pagebreak/}
+        </ul>
+      </div>
+      <!-- /pages -->
+      <div align="center"><script src='http://www.sinojiankang.com/plus/ad_js.php?aid=3' language='javascript'></script>
+      </div>
+      <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+      <div class="handle">
+        <div class="context">
+          <ul>
+            <li>{dede:prenext get='pre'/}</li>
+            <li>{dede:prenext get='next'/}</li>
+          </ul>
+        </div>
+        <!-- /context -->
+      </div>
+      <!-- /handle -->
+    </div>
+    <!-- /viewbox -->
+    <div class="hot mt1">
+      <dl class="tbox">
+        <dt><strong>关于{dede:tag sort='new' getall='0'}[field:tag /]{/dede:tag}的相关文章</strong></dt>
+        <dd>
+          <ul class="c1 ico2">
+            {dede:likearticle  row='20' titlelen='60'}
+            <li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+            {/dede:likearticle}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    </div>
+  <!-- //左边内容结束 -->
+  <!-- //右边内容开始 -->
+  <div class="pright"> 
+<div class="hot mt1"><dl class="tbox light"><dt class="light"><strong>{dede:field.typename/}最新文章</strong> </dt><dd class="light">
+<ul class="c1 ico2">{dede:arclist noflag='h' titlelen='60' row='10' orderby='pubdate'}
+    <li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a> {/dede:arclist}</li>
+</ul>
+</dd></dl></div>
+<div class="commend mt1"><dl class="tbox light"><dt class="light"><strong>{dede:field.typename/}编辑推荐</strong> </dt><dd class="light">
+<ul class="d4">{dede:arclist flag='c' titlelen=60 row=6}
+    <li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a>
+    <p>[field:description function='cn_substr(@me,80)'/]...</p>
+    {/dede:arclist}</li>
+</ul>
+</dd></dl></div>
+<div class="hot mt1"><dl class="tbox light"><dt class="light"><strong>{dede:field.typename/}热点内容</strong> </dt><dd class="light">
+<ul class="c1 ico2">{dede:arclist titlelen=60 row=10 orderby=click}
+    <li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a> {/dede:arclist}</li>
+</ul>
+</dd></dl></div>
+  </div>
+  <!-- /pright -->
+</div>
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+<script type="text/javascript">document.body.oncopy=function(){setTimeout(function(){var text=clipboardData.getData("text");if(text){text=text+"\r\n本文来自:中国健康资讯网(www.sinojiankang.com) \r\n详细出处:"+location.href;clipboardData.setData("text",text)}},100)}</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5c7e0f458302563d7be1a882896f7ad6' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

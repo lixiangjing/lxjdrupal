@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.typename/}_第{dede:pagelist listsize='0' listitem='pageno' function='html2text(@me)'/}页_中国旅游资讯网</title>
+<link href="http://www.travelnewscn.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<style type="text/css">
+<!--
+body{font:14px Verdana,Arial,Helvetica,sans-serif; background:#eee; margin:0; padding:0; color:#000}
+ul, ol, dl{padding:0; margin:0}
+h1, h2, h3, h4, h5, h6, p{margin-top:0; padding-right:15px; padding-left:15px}
+a img{border:none}
+a:link{color:#1982d1; text-decoration:underline}
+a:visited{color:#1982d1; text-decoration:underline}
+a:hover, a:active, a:focus{text-decoration:none}
+.container{width:960px; background:#FFF; margin:0 auto}
+.header{background:#e2e2e2;text-align:center;}
+.header span{font-size:28px;font-style:bold;padding-right:15px; padding-left:15px;font-weight:600;}
+.header a, .header a:visited{text-decoration:none;}
+.content{padding:10px 10px; width:560px; float:left}
+.content h2{background-color:#eee;border-left:5px #ff0000 solid;font-weight:bold;}
+.content ul, .content ol{list-style:none;padding:0 15px 15px 18px}
+.content .breakup{margin:10px auto;border-bottom:1px #ccc dashed;display:block;height:1px;width:100%}
+.content .pagelist li{float:left;list-style:none;width:30px}
+.content li{margin-bottom:5px;}
+.content h1{font-size:16px;margin-top:0; padding-right:15px; padding-left:15px}
+.sidebar{float:left; width:336px;padding-bottom:10px}
+.sidebar h2{margin:10px 10px;background-color:#eee;border-left:5px #ff0000 solid;font-weight:bold;}
+.sidebar li{padding-right:15px; padding-left:15px}
+.sidebar ul{list-style:none;margin-bottom:15px}
+.sidebar ul a, .sidebar ul a:visited{text-decoration:none;line-height:24px;}
+.footer{padding:10px 0; background:#e2e2e2; position:relative; clear:both;text-align:center;}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span><a href="http://www.travelnewscn.com/" title="中国旅游资讯网">中国旅游资讯网</a></span>
+    <!-- 页面头部区域 -->
+  </div>
+  <div class="content">
+    <p><strong>当前位置:</strong> <a href="http://www.travelnewscn.com/">中国旅游资讯网</a> > {dede:type}<a href="[field:typelink /]">[field:typename /]</a>{/dede:type} > </p>
+    <h1>{dede:field.typename/}第{dede:pagelist listsize='0' listitem='pageno' function='html2text(@me)'/}页文章列表</h1>
+      <ul>
+      {dede:list pagesize='55'}
+        <li><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></li>
+	[field:global.autoindex runphp='yes'] 
+	if((@me % 5) == 0){ 
+	@me ='<span class="breakup"></span>'; 
+	} 
+	else{ 
+	@me = ''; 
+	} 
+	[/field:global.autoindex]
+        {/dede:list}</ul> 
+      <ul class="pagelist">
+        {dede:pagelist listitem="pageno" listsize="5"/}
+      </ul>
+    <!--页面主题内容-->
+  </div>
+  <div class="sidebar">
+    <h2>人文地理</h2>
+    <ul>
+		{dede:arclist typeid='15' noflag='h' titlelen='60' row='10' orderby='pubdate'}
+		<li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a></li>{/dede:arclist}
+    </ul>
+    <h2>旅游景点</h2>
+	<ul>
+		{dede:arclist typeid='18'noflag='h' titlelen='60' row='10' orderby='pubdate'}
+		<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></li>
+		{/dede:arclist}
+	</ul>
+    <h2>旅游攻略</h2>
+	<ul>
+		{dede:arclist typeid='20'noflag='h' titlelen='60' row='10' orderby='pubdate'}
+		<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></li>
+		{/dede:arclist}
+	</ul>
+    <h2>热门文章</h2>
+    <ul>
+		{dede:arclist titlelen=60 row=10 orderby=click}
+		<li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a></li>{/dede:arclist}
+    </ul>
+    <!-- 页面侧边栏 -->
+  </div>
+  <div class="footer">
+    <p>内容驱动平台：<a href="http://www.travelnewscn.com/"  target="_blank">中国旅游资讯网</a> © 2010-2012 <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP备11019381号</a></p>
+      <!-- 页面底部内容  -->
+  </div>
+  <!-- 页面内容框架 -->
+</div>
+</body>
+</html>
