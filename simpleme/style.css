@@ -1,0 +1,148 @@
+/* ------------------------------------
+ * SimpleMe for Typecho
+ *
+ * @author	老李
+ * @link	http://idc.wowcms.com/
+ * @update	2012-07-03
+ * --------------------------------- */
+body,h1,h2,h3,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea {margin: 0; padding: 0;}
+header,footer,article,section,nav,menu,hgroup {display:block;}
+body {background-color:#256; color:#444; font-family: "微软雅黑";}
+h1,h2,h3,h4,h5,h6 {font-weight:400;}
+h1 {font-size:24px;}
+h2 {font-size:20px;}
+h3 {font-size:16px;}
+h4,h5,h6 {font-size:14px;}
+img {border:none;}
+a img:hover {background:none; border:none;}
+a {color:#666; text-decoration:none;}
+a:hover {text-decoration:none;color:#CD4900;}
+ol,ul {list-style:none;}
+input,textarea,button {outline:none;}
+input[type^="text"],input[type^="password"],textarea {box-shadow:inset 2px 3px 5px #eee; border:1px solid #bbb; background:#fafafa;}
+input:focus,textarea:focus {background:#fff; border-color:#999;}
+input {vertical-align:middle;}
+input[type^="radio"] {border:none; background:none; width:auto;}
+::selection {color:#fff; background:#444; text-shadow:none;}
+code {font:12px/1.5 "Hiragino Sans GB",Tahoma,Helvetica,Arial;}
+pre,code {display:block; overflow-x:auto; background:#f6f6f6; padding:5px 10px; border:1px solid #ddd; margin-bottom:20px;}
+blockquote {background:#f6f6f6; border-left:2px dashed #ddd; padding:5px 10px; margin-bottom:20px;}
+blockquote p {margin-bottom:10px;}
+.aligncenter {display:block; margin-left:auto; margin-right:auto;}
+.alignleft {float:left;}
+.alignright {float:right;}
+img.alignleft {margin-right:15px;}
+img.alignright {margin-left:15px;}
+#wrap {margin:0 auto; width:950px;}
+/* Tables */
+table {border-collapse:separate; border-spacing:0;}
+caption,th,td {text-align:left; font-weight:normal;}
+table,td,th {vertical-align:middle;}
+table {margin-bottom:1.4em; width:100%;}
+th {font-weight:700;}
+thead th {background:#c3d9ff;}
+th,td,caption {padding:4px 10px 4px 5px;}
+tr.even td {background:#e5ecf9; }
+tfoot {font-style:italic;}
+caption {background:#eee;}
+fieldset {padding:1.4em; margin:0 0 1.5em 0; border:1px solid #ccc;}
+legend {font-weight:bold;}
+/* Header */
+#header {color:#666; padding:20px 0;}
+#logo {text-align:left;margin-left:20px;}
+#logo h1 {font-size:48px;}
+#logo h1 a {color:#000;}
+#lnkBlogLogo {background-color:green;width:20px;height:120px;display:block;position:absolute;margin-left:-25px;}
+#blogLogo {display:none;}
+.description {margin-bottom: 0; font-style: italic;}
+/* Nav */
+#top {background:#fff; border:1px solid #ddd; box-shadow:0 0 20px 1px #333; padding:19px 24px 24px; margin-bottom:30px; word-wrap:break-word; word-break:normal; overflow:hidden;line-height:40px;}
+#nav {width:900px; margin:0 auto;margin-top:30px;margin-left:20px;}
+#nav li {float:left; list-style:none; margin-right:15px;}
+#nav a {color:#999;font-size:30px;}
+#nav a:hover {text-decoration:none;}
+#nav a:hover,#menu .current a {color:#000;}
+#menu .current {border-bottom:3px solid green; line-height:40px; height:38px;}
+#menu {float:left;}
+/* Search */
+#search {background:#fafafa; border:1px solid #ccc; border-radius:3px; box-shadow:inset 1px 1px 3px #ddd; padding:3px 5px; height:16px; margin-top:20px; float:right;margin-right:10px;}
+#search input {border:none; background:none; box-shadow:none; width:130px; height:16px; line-height:16px; vertical-align:top;}
+#search button {background:url(images/search.png) no-repeat; width:16px; height:16px; text-indent:-999px; vertical-align:top; border:none; cursor:pointer; margin-left:-5px; font-size:0;}
+#search button:hover {background:url(images/search_hover.png) no-repeat;}
+/* Content */
+.post {background:#fff; border:1px solid #ddd; box-shadow:0 0 20px 1px #333; padding:19px 24px 24px; margin-bottom:20px; word-wrap:break-word; word-break:normal; overflow:hidden;}
+.date{background:#CD4900;color:#fff;font-size:16px;padding-top:3px;padding-left: 15px;padding-right: 15px;padding-bottom:3px;margin-bottom:10px;}
+.cate {margin-top:10px;text-align:right;font-size:14px;}
+.cate a{color:#999;}
+.cate a:hover{color:green;}
+.post_head {font-size:12px; color:#888; margin-bottom:20px;}
+.post_head a {color:#333;margin-left:10px;font-size:26px;}
+.post_artice img {max-width:800px; height:auto;}
+.post_artice p {font-size:16px; margin-bottom:20px;}
+.post_artice p:last-child {margin-bottom:0;}
+.tags a {font-size:12px; color:#666; text-shadow:1px 1px #fff; background:#f3f3f3; border-right:1px solid #ddd; border-bottom:1px solid #ddd; margin-right:8px; padding:5px 8px;}
+.tags a:hover {background:#e3e3e3; border-color:#bbb; color:#333; text-decoration:none;}
+.post ul {list-style-type:disc;}
+.post ol {list-style-type:decimal;}
+.post ul,.post ol {margin-left:20px; margin-bottom:20px;}
+/* Pagebar */
+.page-navigator {margin-top:20px; list-style:none; font-size:12px; height:30px; line-height:30px; clear:both;}
+.page-navigator li {margin-right:5px; float:left; display:inline;}
+.page-navigator li a {background:#fff; display:block; width:28px; text-align:center; border:1px solid #eee; text-decoration:none; color:#666;}
+.page-navigator li a:hover,.page-navigator li.current a {background:#eee; border-color:#ddd; color:#444;}
+/* Comment */
+#comments {margin-top:20px;background:#fff; border:1px solid #ddd; box-shadow:0 0 20px 1px #333;word-wrap:break-word; word-break:normal; overflow:hidden;}
+#comments p {margin-bottom:15px;}
+.comments_box { background:#fff; padding:24px;}
+.comments_count {text-align:right; margin-bottom:10px; font-size:12px; color:#999;margin-right:30px;}
+.comment-child {margin-left:42px; border-top:1px dashed #ddd; padding-top:15px;}
+.comment-list li {border-bottom:1px solid #ddd; margin-bottom:20px; position:relative;}
+.comment-list .comment-children li {border-bottom:none; margin-bottom:0;}
+.comment-list li.comment-by-author {}
+.comment-reply {position:absolute; top:0; right:0; font-size:12px; line-height:18px;}
+.comment-child .comment-reply {top:15px;}
+.comment-reply a {font-size:12px; border:none; color:#888;}
+.comment-reply a:hover {color:#444;}
+.comment-meta {float:right; color:#999; font-size:12px; margin-right:35px;}
+.comment-meta a {color:#999;}
+.comment-author {float:left; font-size:12px; height:20px;}
+.comment-author cite.fn {font-style:normal;}
+.comment-body {overflow:hidden;}
+.comment-body p {margin-left:42px; clear:both;}
+img.avatar {float:left; margin-right:10px;}
+.respond {background:#fff; padding:24px; margin-bottom:10px;}
+#comment_form {padding-right:8px;}
+.respond .cancel-comment-reply {float:right; font-size:11px;}
+.respond .cancel-comment-reply a {color:#aaa;}
+.respond .cancel-comment-reply a:hover {color:#444;}
+#comment_form p {font-size:12px; margin:0 0 5px; clear:left;}
+#comment_form label {font-size:12px; color:#555; display:block;}
+#comment_form label .required {color:#C04E37; padding-left:5px;}
+#comment_form textarea {font-size:14px; height:24px; line-height:24px; padding:3px 4px; width:88%; margin-right:1%;}
+#comment_form button {background:#666; border:1px solid #444; color:#fff; font-size:14px; cursor:pointer; text-shadow:1px 1px #000; height:32px; line-height:32px; width:8%; text-align:center; vertical-align:top;}
+#comment_form button:hover {background:#222; border-color:#000;}
+.login_meta {margin-bottom:10px; overflow:hidden;}
+.login_meta li {float:left; width:27%; margin-right:1%;}
+.login_meta input {width:99%; height:26px; font-size:14px;}
+.login_meta li.urltext {width:33%;}
+/* Sidebar */
+#sidebar {background:#fff; border:1px solid #ddd; box-shadow:0 0 20px 1px #333; padding:19px 24px 24px; margin-top:20px; word-wrap:break-word; word-break:normal; width:900px;display:table; overflow:hidden;}
+.side_box {width:240px; display:table-cell; vertical-align:top;}
+.side_box ul li a{font-size:12px;color:#666;}
+.side_box ul li a:hover{color:#CD4900;}
+.side_1 {padding-right:20px;}
+.side_2 {border-left:1px solid #ddd; border-right:1px solid #ddd; padding:0 19px; font-size:13px;}
+.side_3 {padding-left:20px;}
+.side_4 {padding-left:0px;margin-top:20px;}
+.side_4 li {margin-bottom:15px; overflow:hidden;}
+.icon {float:left; margin-right:10px;}
+.icon a {background:url(images/icon.png) no-repeat; display:block; width:85px; height:24px; font-size:0; text-indent:-999; overflow: hidden;}
+.weibo a {background-position:0 0;}
+.tqq a {background-position:-85px 0;}
+.rss {background:url(images/rss.png) no-repeat 0 2px; padding-left:20px; float:left; margin-right:10px;}
+/* 404 */
+#nopage {background:url(images/404.png) no-repeat center 50px; min-height:250px; text-align:center; padding-top:160px;}
+/* Footer */
+#footer {font-size:12px; font-family:Tahoma, Helvetica, Arial; color:#fff; padding:15px 0; text-align:center;}
+#footer a {color:#ccc;}
+#footer a:hover{color:#CD4900;}
